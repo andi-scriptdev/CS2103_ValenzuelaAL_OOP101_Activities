@@ -9,7 +9,6 @@ public class Canteen {
         String[] itemNames = {"Burger", "Pizza", "Pasta", "Sandwich", "Milk Tea"};
         double[] itemPrices = {80.00, 120.00, 100.00, 70.00, 90.00};
 
-        // Running totals for the whole transaction
         int totalItemsPurchased = 0;
         double totalBeforeDiscount = 0.0;
         double totalDiscount = 0.0;
@@ -50,7 +49,6 @@ public class Canteen {
                 System.out.printf("Discount: $%.2f%n", discount);
                 System.out.printf("Order total: $%.2f%n", orderTotal);
 
-                // Update running totals
                 totalItemsPurchased += quantity;
                 totalBeforeDiscount += subtotal;
                 totalDiscount += discount;
@@ -78,7 +76,6 @@ public class Canteen {
         System.out.println();
     }
 
-    // Displays the final order summary
     private static void displaySummary(int totalItems, double totalBeforeDiscount,
                                         double totalDiscount, double finalAmount) {
         System.out.println("===== ORDER SUMMARY =====");
