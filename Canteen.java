@@ -29,7 +29,7 @@ public class Canteen {
             boolean validQuantity = quantity >= 1 && quantity <= 10;
 
             if (!validItem || !validQuantity) {
-                System.out.println("\nInvalid order! Please enter a valid item number and quantity.\n");
+                System.out.println("\nInvalid order! Please enter a valid item number and quantity.");
             } else {
                 System.out.print("Are you a student? (Y/N): ");
                 char studentAnswer = scanner.next().charAt(0);
