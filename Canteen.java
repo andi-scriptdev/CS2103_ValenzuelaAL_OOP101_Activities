@@ -38,6 +38,13 @@ public class Canteen {
                 double price = itemPrices[itemNumber - 1];
                 double subtotal = price * quantity;
 
+                double discount = 0.0;
+                if (isStudent) {
+                    discount = subtotal * 0.10;
+                }
+
+                double orderTotal = subtotal - discount;
+
                 System.out.println();
                 System.out.printf("Subtotal: $%.2f%n", subtotal);
                 System.out.printf("Discount: $%.2f%n", discount);
