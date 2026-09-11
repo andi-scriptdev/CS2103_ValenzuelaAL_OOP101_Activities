@@ -5,7 +5,6 @@ public class Canteen {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Menu data
         String[] itemNames = {"Burger", "Pizza", "Pasta", "Sandwich", "Milk Tea"};
         double[] itemPrices = {80.00, 120.00, 100.00, 70.00, 90.00};
 
@@ -67,7 +66,6 @@ public class Canteen {
         scanner.close();
     }
 
-    // Displays the canteen menu
     private static void displayMenu(String[] itemNames, double[] itemPrices) {
         System.out.println("=====   M E N U   =====");
         for (int i = 0; i < itemNames.length; i++) {
